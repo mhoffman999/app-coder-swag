@@ -13,6 +13,8 @@
 		D2A31DFB21D01098007221B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2A31DFA21D01098007221B5 /* Assets.xcassets */; };
 		D2A31DFE21D01098007221B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2A31DFC21D01098007221B5 /* LaunchScreen.storyboard */; };
 		D2A31E0921D019F9007221B5 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A31E0821D019F9007221B5 /* CategoryCell.swift */; };
+		D2A31E0B21D05A9D007221B5 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A31E0A21D05A9D007221B5 /* Category.swift */; };
+		D2A31E0E21D0603D007221B5 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A31E0D21D0603D007221B5 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		D2A31DFD21D01098007221B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2A31DFF21D01098007221B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2A31E0821D019F9007221B5 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		D2A31E0A21D05A9D007221B5 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		D2A31E0D21D0603D007221B5 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		D2A31DF221D01096007221B5 /* coder-swag */ = {
 			isa = PBXGroup;
 			children = (
+				D2A31E0C21D06021007221B5 /* Services */,
 				D2A31E0721D01999007221B5 /* Model */,
 				D2A31E0621D0198A007221B5 /* View */,
 				D2A31E0521D0197E007221B5 /* Controller */,
@@ -87,8 +92,17 @@
 		D2A31E0721D01999007221B5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D2A31E0A21D05A9D007221B5 /* Category.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D2A31E0C21D06021007221B5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D2A31E0D21D0603D007221B5 /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +179,8 @@
 				D2A31DF621D01096007221B5 /* CategoriesVC.swift in Sources */,
 				D2A31DF421D01096007221B5 /* AppDelegate.swift in Sources */,
 				D2A31E0921D019F9007221B5 /* CategoryCell.swift in Sources */,
+				D2A31E0B21D05A9D007221B5 /* Category.swift in Sources */,
+				D2A31E0E21D0603D007221B5 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -24,19 +24,19 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DKs-hX-3Jm">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DKs-hX-3Jm">
                                 <rect key="frame" x="0.0" y="60" width="375" height="543"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="145" id="JXP-Kb-RBG" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="145" id="JXP-Kb-RBG" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="145"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JXP-Kb-RBG" id="jj2-sf-op7">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="144.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="145"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shirts" translatesAutoresizingMaskIntoConstraints="NO" id="Dj1-Sl-E1f">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="144.5"/>
+                                                    <rect key="frame" x="0.0" y="3" width="375" height="139"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHIRTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J77-Br-1cI">
                                                     <rect key="frame" x="117.5" y="55" width="140" height="35"/>
@@ -50,9 +50,9 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="Dj1-Sl-E1f" firstAttribute="top" secondItem="jj2-sf-op7" secondAttribute="top" constant="3" id="5YA-jt-zxH"/>
                                                 <constraint firstAttribute="trailing" secondItem="Dj1-Sl-E1f" secondAttribute="trailing" id="DkX-nh-zX8"/>
-                                                <constraint firstAttribute="bottom" secondItem="Dj1-Sl-E1f" secondAttribute="bottom" id="Hdw-GL-4iT"/>
-                                                <constraint firstItem="Dj1-Sl-E1f" firstAttribute="top" secondItem="jj2-sf-op7" secondAttribute="top" id="cgz-O1-IqT"/>
+                                                <constraint firstAttribute="bottom" secondItem="Dj1-Sl-E1f" secondAttribute="bottom" constant="3" id="RsJ-WW-RW0"/>
                                                 <constraint firstItem="Dj1-Sl-E1f" firstAttribute="leading" secondItem="jj2-sf-op7" secondAttribute="leading" id="gsi-KQ-b5S"/>
                                                 <constraint firstItem="J77-Br-1cI" firstAttribute="centerY" secondItem="jj2-sf-op7" secondAttribute="centerY" id="i3P-8L-xDM"/>
                                                 <constraint firstItem="J77-Br-1cI" firstAttribute="centerX" secondItem="jj2-sf-op7" secondAttribute="centerX" id="rAs-R7-KTC"/>
