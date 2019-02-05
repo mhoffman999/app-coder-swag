@@ -15,7 +15,7 @@ import Foundation
 class DataService {
     
     //"static" means there is only ever one copy in memory
-    //Therefore, anytime the app references "instance", it will be the same (only) emaple of that data
+    //Therefore, anytime the app references "instance", it will be the same (only) example of that data
     //The constant "instance" is created with a brand new copy of DataService, but it is static
     //This constant will hold the data for the app
     static let instance = DataService()
