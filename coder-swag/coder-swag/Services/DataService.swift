@@ -59,10 +59,12 @@ class DataService {
     private let digitalGoods = [Product]()
     
     //The func return type will be an array of type Category
+    //Will be called to fill tableview cells
     func getCategories() -> [Category] {
         return categories
     }
     
+    //Will be called to fill CollectionView cells
     func getProducts(forCategoryTitle title: String) -> [Product] {
         //The Switch statement will help decide which array to return
         //Will need func for each case type (see below)

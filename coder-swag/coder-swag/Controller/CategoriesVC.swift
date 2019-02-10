@@ -55,8 +55,35 @@ class CategoriesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
         }
     }
     
+    //Will loads which tableiew cell row (i.e. category) was tapped and any relevent data
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let category = DataService.instance.getCategories()[indexPath.row]
+        performSegue(withIdentifier: "ProductsVC", sender: category)
+    }
     
-    
+    //Takes the selected row data to pass to the VC segue from "performsegue" above
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let productsVC = segue.destination as? ProductsVC {
+            
+            //Removing the navigation back button title
+            //You must create a NEW bar button THEN replace the navigation back button with the new button
+            let barBtn = UIBarButtonItem()
+            barBtn.title = ""
+            navigationItem.backBarButtonItem = barBtn
+            
+            //Creating an assertion so that we know it is working correctly at build time
+            //Use this only at build time in develop mode NOT in production
+            //This will force a crash if it is not working
+            assert(sender as? Category != nil)
+            
+            //Calling the initProducts func created in ProductsVC
+            //"sender" is the "category" passed in from the didSelectRow func (above)
+            //Because the parameter type is "any" object, you must specify it as a Category (in this instance)
+            //"The "as" is force unwrapped (!) because we know it is a Category (see "sender" in didSelectRow) and will cast correctly
+            productsVC.initProducts(category: sender as! Category)
+            
+        }
+    }
     
     
     
